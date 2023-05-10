@@ -1,0 +1,35 @@
+<mat-toolbar>
+    <img src="http://localhost/logo1.png">
+    <span style="font-size: larger;">Nutrition Diet</span><br>
+    <button mat-icon-button class="menu" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu"><h5>Menu</h5></button>
+    <mat-menu #menu="matMenu" routerLink="/">
+        <a mat-menu-item>
+        <mat-icon>house</mat-icon>
+        <span>Home</span>
+        </a>
+        <a mat-menu-item (click)="diet()">
+            <mat-icon>assignment</mat-icon>
+            <span>Diet</span>
+        </a>
+        <a mat-menu-item (click)="suggestions()">
+        <mat-icon>noteadd</mat-icon>
+        <span>suggestions</span>
+        </a>
+        <a mat-menu-item (click)="plan()">
+        <mat-icon>table</mat-icon>
+        <span>plan</span>
+        </a>
+        <a mat-menu-item (click)="form()">
+            <mat-icon>reviews</mat-icon>
+            <span>forum</span>
+            </a>
+            <a mat-menu-item (click)="logout()">
+                <mat-icon>logout</mat-icon>
+            
+            </a>
+        </mat-menu>
+        
+</mat-toolbar>
+
+<router-outlet></router-outlet> 
+

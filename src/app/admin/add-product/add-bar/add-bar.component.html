@@ -1,0 +1,62 @@
+<div class="frame">
+    <div class="content">
+        <div mat-dialog-content>
+            <mat-form-field>
+                <input matInput placeholder="Product name" [(ngModel)]="name">
+            </mat-form-field><br>
+            <mat-form-field>
+                <input matInput placeholder="type name" [(ngModel)]="type">
+            </mat-form-field><br>
+        <mat-form-field >
+            <input matInput placeholder="price" [(ngModel)]="price">
+            </mat-form-field><br>
+            <mat-form-field >
+                <input matInput placeholder="Food" [(ngModel)]="Food">
+                </mat-form-field><br>
+                    <mat-form-field >
+                        <input matInput placeholder="Measure" [(ngModel)]="Measure">
+                        </mat-form-field><br>
+                        <mat-form-field >
+                            <input matInput placeholder="Grams" [(ngModel)]="Grams">
+                            </mat-form-field><br>
+                            <mat-form-field >
+                                <input matInput placeholder="Calories" [(ngModel)]="Calories">
+                                </mat-form-field><br>
+                                <mat-form-field >
+                                    <input matInput placeholder="Protein" [(ngModel)]="Protein">
+                                    </mat-form-field><br>
+                                    <mat-form-field >
+                                        <input matInput placeholder="Fat" [(ngModel)]="Fat">
+                                        </mat-form-field><br>
+                                        <mat-form-field >
+                                            <input matInput placeholder="Fiber" [(ngModel)]="Fiber">
+                                            </mat-form-field><br>
+                                            <mat-form-field >
+                                                <input matInput placeholder="Carbs" [(ngModel)]="Carbs">
+                                                </mat-form-field><br>
+                                                <mat-form-field >
+                                                    <input matInput placeholder="Category" [(ngModel)]="Category">
+                                                    </mat-form-field><br>
+                                                    <mat-form-field >
+                                                        <input matInput placeholder="image" [(ngModel)]="image">
+                                                        </mat-form-field><br>
+                                                        <mat-form-field >
+                                                            <input matInput placeholder="description" [(ngModel)]="description">
+                                                            </mat-form-field><br>
+                                                            <mat-form-field >
+                                                                <input matInput placeholder="quantity" [(ngModel)]="quantity">
+                                                                </mat-form-field><br>
+            <button mat-raised-button color="accent" [disabled]="!name || !type || !price || !Food || !Measure || !Grams || !Calories || !Protein || !Fat || !Fiber || !Carbs || !Category || !image || !description || !quantity" (click)="submit()">Add product</button>
+        </div>
+        
+        
+    </div>
+  </div>
+  
+
+
+
+
+
+
+

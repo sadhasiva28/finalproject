@@ -1,0 +1,16 @@
+.box
+{
+    height: 60px;
+    text-align: center;
+    margin-right: 15%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+mat-card{
+    margin-left: 40%;
+}

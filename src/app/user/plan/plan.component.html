@@ -1,0 +1,23 @@
+<div class="div">
+  <div cdkDropListGroup class="head">
+    <h1>List Of Items</h1>
+    <div cdkDropList id="product" [cdkDropListConnectedTo]="'items'" (cdkDropListDropped)="onDrop($event)" [cdkDropListData]="productItems">
+      <div cdkDrag class="drag-item" *ngFor="let product of productItems">
+        {{product}}
+      </div>
+    </div>
+  </div>
+  
+  <div cdkDropListGroup class="down">
+    <h1>Create your Plan</h1>
+    <div cdkDropList id="items" [cdkDropListConnectedTo]="'product'" (cdkDropListDropped)="onDrop($event)" [cdkDropListData]="createPlan">
+      <div cdkDrag class="drag-item" *ngFor="let product of createPlan; let i=index">
+        <span>{{product}}</span><br>
+        <input type="number" [(ngModel)]="quantities[i]" placeholder="Quantity">
+      </div>
+    </div><br>
+    <button mat-raised-button (click)="calculate()" color="primary">Calculate</button><br><br>
+    <div><b>Total Quantity:</b> {{totalQuantity}}</div>
+  </div>
+  
+</div>

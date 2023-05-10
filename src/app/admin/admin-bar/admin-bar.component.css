@@ -1,0 +1,21 @@
+img{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+}
+.menu{
+    margin-left: 37%;
+    margin-right: 10%;
+    
+}
+button{
+    background-color: rgb(169, 169, 169);
+}
+img{
+    margin-left: 550px;
+}
+mat-toolbar
+{
+    background-color: rgb(169, 217, 140);
+    box-shadow: 5px 5px 5px gray;
+}

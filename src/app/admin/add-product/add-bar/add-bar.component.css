@@ -1,0 +1,41 @@
+.frame {
+    position: relative;
+    margin-top: 05%;
+    margin-left: 40%;
+    width: 20%;
+    height: 400px; /* Set the desired height of the frame */
+    overflow: hidden;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    padding-right: 15px; /* Add padding to prevent content from overlapping with the scrollbar */
+  }
+  
+  .scroll-buttons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .scroll-up-button,
+  .scroll-down-button {
+    display: block;
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .scroll-up-button:hover,
+  .scroll-down-button:hover {
+    background-color: #ddd;
+  }
+  

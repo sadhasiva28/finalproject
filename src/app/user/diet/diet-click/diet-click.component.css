@@ -1,0 +1,37 @@
+.example-card {
+    float: left;
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px gray;
+    margin: 30px;
+    margin-left: 35%;
+    margin-top: 05%;
+  }
+  
+  .example-header-image {
+    background-image: url('http://localhost/fitness1.jpg');
+    background-size: cover;
+  }
+  .number{
+    margin-top: 50px;
+    background-color: antiquewhite;
+    font-size: 20px;
+    padding: 20px;
+  }
+  p{
+    text-align: center;
+    font-size: medium;
+    margin-top: 10px;
+  }
+  .body{
+    background-color: rgb(164, 207, 170);
+    font-size: 20px;
+
+  }
+  mat-card-content
+  {
+    width: 92%;
+    height: 86%;
+  }
+  

@@ -1,0 +1,37 @@
+.details{
+    border: solid;
+    width: 30%;
+    height: 50%;
+    margin-left: 50%;
+    margin-top: 05%;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px gray;
+}
+.service-box{
+    float: left;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px gray;
+    margin: 30px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.image-holder{
+    height: 100%;
+    width: 100%;
+
+}
+.image-holder img{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    margin-left: 35%;
+    margin-top: 30px;
+    text-shadow: 3px 3px 3px rgb(128, 128, 128);
+}
+p{
+    margin-left: 100px;
+
+}

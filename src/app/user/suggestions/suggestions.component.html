@@ -1,0 +1,18 @@
+<div class="head">
+    <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label class="form">Enter</mat-label>
+          <input matInput #input placeholder="Enter the quetion...."[(ngModel)]="question" class="example-input">
+        </mat-form-field><br>
+        <button mat-raised-button color="primary" (click)="AddQuestion()" [disabled]="!question">Submit</button>
+    </div>
+    
+
+  </div><br><br>
+  <b>Questions:</b>
+<div class="down">
+
+  <app-sug-bar *ngFor="let x of suglist" [suggestion]="x"></app-sug-bar>
+
+</div>
+

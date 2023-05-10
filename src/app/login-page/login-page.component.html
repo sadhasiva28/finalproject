@@ -1,0 +1,82 @@
+<div class="login" style="background-image: url('http://localhost/image2.jpg')">
+</div>
+
+<div class="card">
+
+<mat-card *ngIf="signin==true">
+        <mat-card-header class="logo">
+            <img src="http://localhost/logo2.jpg" alt="Logo" height="50">
+
+        </mat-card-header>
+        
+        <mat-card-header class="logo">
+            
+          <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+      
+        <mat-card-content>
+          <form #loginForm="ngForm">
+            <mat-form-field>
+              <input matInput placeholder="Username" name="username" [(ngModel)]="username" required>
+              <mat-error *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].touched">
+                Please enter a valid username.
+              </mat-error>
+            </mat-form-field>
+      
+            <mat-form-field>
+              <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="password" required>
+              <mat-error *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+                Please enter a valid password.
+              </mat-error>
+            </mat-form-field>
+      
+            <button mat-raised-button color="primary" (click)="UserCheck()" [disabled]="loginForm.invalid">Login</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card *ngIf="signup==true">
+        <mat-card-header class="logo">
+            <img src="http://localhost/logo2.jpg" alt="Logo" height="50">
+
+        </mat-card-header>
+        <mat-card-header class="logo1">
+          <mat-card-title>Register</mat-card-title>
+        </mat-card-header>
+      
+        <mat-card-content>
+          <form #registerForm="ngForm">
+            <mat-form-field>
+              <input matInput placeholder="Username" name="username" [(ngModel)]="username" required>
+              <mat-error *ngIf="registerForm.controls['username'].invalid && registerForm.controls['username'].touched">
+                Please enter a valid username.
+              </mat-error>
+            </mat-form-field>
+      
+            <mat-form-field>
+              <input matInput type="email" placeholder="Email" name="email" [(ngModel)]="email" required>
+              <mat-error *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched">
+                Please enter a valid email.
+              </mat-error>
+            </mat-form-field>
+      
+            <mat-form-field>
+              <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="password" required>
+              <mat-error *ngIf="registerForm.controls['password'].invalid && registerForm.controls['password'].touched">
+                Please enter a valid password.
+              </mat-error>
+            </mat-form-field>
+      
+            <button mat-raised-button color="primary" (click)="registerUser()" [disabled]="registerForm.invalid">Register</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+<br>
+      <mat-button-toggle-group class="toggle" aria-label="Font Style">
+        <mat-button-toggle value="signin" (click)="login()">Sign In</mat-button-toggle>
+        <mat-button-toggle value="signup" (click)="register()">Sign Up</mat-button-toggle>
+    </mat-button-toggle-group>
+      
+
+
+  </div>

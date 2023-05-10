@@ -1,0 +1,21 @@
+
+<div>
+    <div class="f">
+        <select [(ngModel)]="selected" (change)="filterProducts()">
+            <option *ngFor="let x of types">{{x}}</option>
+          </select>
+        </div>
+        
+        <div class="s">
+        <input type="text" [(ngModel)]="searchvalue" placeholder="search"   (keyup)="filterProducts()">
+        </div>
+</div>
+<br><br>
+<div class="fruits">
+    <app-home-bar *ngFor="let x of fileteredlist" [product]="x"></app-home-bar>
+ </div>
+
+
+
+
+

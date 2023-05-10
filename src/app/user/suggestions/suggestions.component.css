@@ -1,0 +1,32 @@
+
+
+.example-container {
+  width: 50%;
+  float: left;
+  margin-top: 15%;
+  position: relative;
+  left: 10%;
+
+}
+
+.down {
+  width: 50%;
+  float: right;
+  margin-top: 07%;
+  position: relative;
+  left: 10%;
+  
+  
+}
+.input{
+  width: 50%;
+}
+b{
+  margin-top: 10%;
+  margin-left: 60px;
+}
+mat-form-field{
+  width: 400px;
+}
+
+

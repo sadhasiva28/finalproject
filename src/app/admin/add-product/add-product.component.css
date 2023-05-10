@@ -1,0 +1,33 @@
+.top{
+    margin-left: 85%;
+    margin-top: 10px;
+}
+.service-box{
+    float: left;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px gray;
+    margin: 30px;
+    margin-left: 70px;
+}
+.image-holder{
+    height: 80%;
+    width: 100%;
+}
+.image-holder img{
+    height: 100%;
+    width: 100%;
+}
+.text{
+    height: 20%;
+    text-align: center;
+    background-color: rgb(145, 230, 143);
+    text-shadow: 3px 3px 3px rgb(128, 128, 128);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-top: 25px;
+    box-sizing: border-box;
+
+}

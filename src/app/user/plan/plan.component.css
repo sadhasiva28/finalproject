@@ -1,0 +1,42 @@
+.div{
+    display: flex;
+}
+.drag-item{
+    padding: 1em;
+    border: 1px solid gray;
+    background-color: white;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.cdk-drag-preview{
+    background-color: gainsboro;
+    box-shadow: 0px 0px 8px 2px gainsboro;
+}
+
+.cdk-drag-placeholder{
+    opacity: 0;
+}
+
+.cdk-drag-animating{
+    transition: transform 200ms cubic-bezier(0,0,0.2,0);
+}
+
+.cdk-drop-list-dragging .cdk-drag {
+    transition: transform 100ms cubic-bezier(0,0,0.2,0);
+
+}
+.head{
+    float: left;
+    width: 50%;
+    margin-top: 05%;
+    margin-left: 10%;
+    flex: 50%;
+}
+.down{
+    float: right;
+    width: 50%;
+    flex: 50%;
+    margin-top: 05%;
+    margin-left: 10%;
+}

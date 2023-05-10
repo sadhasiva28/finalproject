@@ -1,0 +1,14 @@
+.f{
+    border: 0px solid;
+    margin-top: 05px;
+    margin-left: 20px;
+    float: left;
+    
+}
+.s{
+    float: right;
+    margin-top: 05px;
+    margin-right: 20px;
+    border: 10px;
+    float: right;
+}

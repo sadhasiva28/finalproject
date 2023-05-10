@@ -1,0 +1,19 @@
+<div class="example-container">
+    <mat-form-field  appearance="fill">
+      <mat-label class="form">Enter</mat-label>
+      <input matInput #input  placeholder="Enter the comments...."[(ngModel)]="response">
+    </mat-form-field><br>
+    <button mat-raised-button color="primary" (click)="addquery(response)" [disabled]="!response">Add Comments</button>
+</div>
+
+<div class="down">
+    <b>Comments:</b>
+    <div *ngFor="let x of forumdata.comments">
+        
+        <mat-card>
+            <mat-card-content>{{x}}</mat-card-content>
+          </mat-card>
+
+    </div>
+
+</div>

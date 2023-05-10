@@ -1,0 +1,18 @@
+<div>
+    <div class="example-container">
+        <mat-form-field  appearance="fill">
+          <mat-label>Enter</mat-label>
+          <input matInput #input placeholder="Enter the quetion...." [(ngModel)]="forum">
+        </mat-form-field><br>
+        <button mat-raised-button color="primary" (click)="AddQuestion()" [disabled]="!forum">Submit</button>
+    </div>
+    
+
+</div>
+
+<div class="down">
+    <b>Questions: </b><br><br>
+    <app-forum-bar *ngFor="let x of forumlist" [forum]="x"></app-forum-bar>
+
+</div>
+
