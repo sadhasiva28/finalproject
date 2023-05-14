@@ -1,11 +1,12 @@
 <div class="div">
   <div cdkDropListGroup class="head">
     <h1>List Of Items</h1>
-    <div cdkDropList id="product" [cdkDropListConnectedTo]="'items'" (cdkDropListDropped)="onDrop($event)" [cdkDropListData]="productItems">
-      <div cdkDrag class="drag-item" *ngFor="let product of productItems">
-        {{product}}
+    <div cdkDropList id="product" [cdkDropListConnectedTo]="'items'" (cdkDropListDropped)="onDrop($event)" [cdkDropListData]="fileteredlist || []">
+      <div cdkDrag class="drag-item" *ngFor="let product of fileteredlist">
+        {{ product.name}}
       </div>
     </div>
+    
   </div>
   
   <div cdkDropListGroup class="down">

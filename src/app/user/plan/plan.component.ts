@@ -1,5 +1,6 @@
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
+import { HomeService } from 'src/app/services/home.service';
 
 @Component({
   selector: 'app-plan',
@@ -8,27 +9,20 @@ import { Component } from '@angular/core';
 })
 export class PlanComponent {
 
-  productItems=[
-    "pineapple",
-    "carrot",
-    "dry fruits",
-    "chicken",
-    "leafy vegetables",
-    "orange",
-    "onions",
-    "Dry Fruit",
-    "Protein",
-    "Pasta",
-    "Burger",
-    "Japanese",
-    "Indian",
-    "Pizza",
-    "British",
-    "Mexican",
-    "Thai",
-    "Russian",
-    "Leaf vegetable"
-  ];
+  
+  fileteredlist:any;
+
+  constructor(private hs: HomeService) {
+    this.hs.getproducts().subscribe({
+      next: (data: any) => {
+        this.fileteredlist = data; // initialize filtered list here
+      },
+      error: () => {
+        this.fileteredlist = [];
+      }
+    });
+  }
+  
 
   createPlan=[
     "Apple",

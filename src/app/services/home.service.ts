@@ -15,4 +15,8 @@ export class HomeService {
   getproductById(id:number):Observable<any>{
     return this.http.get("http://localhost:4500/products/"+id)
 }
+getproductItems():Observable<any>{
+  return this.http.get("http://localhost:4500/products/items")
+}
+
 }

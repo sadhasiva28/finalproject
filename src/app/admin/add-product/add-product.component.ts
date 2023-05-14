@@ -58,4 +58,12 @@ export class AddProductComponent implements OnInit {
       this.filteredlist = this.filteredlist.filter((product:any) => product.name.toLowerCase().includes(this.searchvalue.toLowerCase()));
     }
   }
+  removeProduct(product: any) {
+    const index = this.servicelist.indexOf(product);
+    if (index > -1) {
+      this.servicelist.splice(index, 1);
+      this.filteredlist = this.servicelist;
+    }
+  }
+  
 }
