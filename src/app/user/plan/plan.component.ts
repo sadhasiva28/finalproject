@@ -15,7 +15,7 @@ export class PlanComponent {
   constructor(private hs: HomeService) {
     this.hs.getproducts().subscribe({
       next: (data: any) => {
-        this.fileteredlist = data; // initialize filtered list here
+        this.fileteredlist = data; 
       },
       error: () => {
         this.fileteredlist = [];
